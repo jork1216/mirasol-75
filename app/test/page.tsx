@@ -49,7 +49,7 @@ export default function TestPage() {
             </span>
           </p>
         </div>
-        <div className="absolute top-[175%] left-1/2 z-10 h-[190vw] w-[190vw] -translate-x-1/2 -translate-y-1/2 rounded-full border-6 border-yellow-400 bg-white md:top-[205%]" />
+        <div className="absolute top-[175%] left-1/2 z-10 h-[190vw] w-[190vw] -translate-x-1/2 -translate-y-1/2 rounded-full border-6 border-yellow-400 bg-[#fcf7ee] md:top-[205%]" />
         <div className="absolute top-0 left-0 z-0 h-full w-[90vw] bg-gradient-to-r from-yellow-900/90 to-transparent" />
       </div>
 
@@ -132,7 +132,26 @@ export default function TestPage() {
             </p>
           </div>
         </div>
-        <button className="mx-auto mt-5 rounded-full border-2 border-yellow-500 bg-green-950 px-10 py-3 text-sm font-semibold tracking-[0.18em] text-white shadow-lg md:px-16 md:text-lg">
+        <button className="mx-auto mt-5 flex items-center justify-center gap-3 rounded-full border-2 border-yellow-500 bg-green-950 px-10 py-3 text-sm font-semibold tracking-[0.18em] text-white shadow-lg md:px-16 md:text-lg">
+          <svg
+            aria-hidden="true"
+            className="size-5 md:size-6"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M4 6.75h16v10.5H4V6.75Z"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+            <path
+              d="m4 7 8 6 8-6"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
           RSVP NOW
         </button>
       </div>
