@@ -12,12 +12,12 @@ const cormorant = Cormorant_Garamond({
 
 export default function TestPage() {
   return (
-    <div>
-      <div className="relative inline-block w-fit overflow-hidden">
+    <div className="relative">
+      <div className="relative aspect-square w-full overflow-hidden md:inline-block md:aspect-auto md:w-fit">
         <img
           src="/lola-cover.png"
           alt="Lola cover"
-          className="block -translate-y-[10%] -translate-x-[10%] scale-140 md:scale-120"
+          className="block h-full w-full -translate-y-[10%] -translate-x-[20%] scale-140 object-cover md:h-auto md:w-auto md:-translate-x-[10%] md:scale-120"
         />
         <div className="absolute top-[10%] left-[10%] z-10 text-center">
           <p className="text-[8px] font-medium tracking-[0.32em] text-white [text-shadow:0_2px_4px_rgba(0,0,0,0.7)] md:text-[11px] lg:text-[18px]">
@@ -46,8 +46,18 @@ export default function TestPage() {
           @ <span className="text-[74px] md:text-[106px] lg:text-[148px]">75</span>
         </p>
         </div>
-        <div className="absolute top-[205%] left-1/2 z-10 h-[190vw] w-[190vw] -translate-x-1/2 -translate-y-1/2 rounded-full border-6 border-yellow-400 bg-white" />
+        <div className="absolute top-[175%] left-1/2 z-10 h-[190vw] w-[190vw] -translate-x-1/2 -translate-y-1/2 rounded-full border-6 border-yellow-400 bg-white md:top-[205%]" />
         <div className="absolute top-0 left-0 z-0 h-full w-[90vw] bg-gradient-to-r from-yellow-900/90 to-transparent" />
+        <img
+          src="/sunflower.png"
+          alt="Sunflower"
+          className="absolute top-[-15%] -left-20 z-30 w-40 rotate-90 md:w-40 lg:w-48"
+        />
+        <img
+          src="/sunflower.png"
+          alt="Sunflower"
+          className="absolute top-[70%] -left-20 z-30 w-40 md:w-40 lg:w-48"
+        />
       </div>
     </div>
   );
