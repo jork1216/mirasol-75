@@ -30,8 +30,13 @@ export default function TestPage() {
             <br />
             Celebration
           </p>
+          <div className="mx-auto mt-0 flex w-20 items-center gap-2 text-[#f2c84b] md:w-28 lg:mt-3 lg:w-36">
+            <div className="h-0.5 flex-1 bg-[#f2c84b]" />
+            <span className="text-sm md:text-base lg:text-xl">♥</span>
+            <div className="h-0.5 flex-1 bg-[#f2c84b]" />
+          </div>
           <p
-            className={`${cormorant.className} mt-4 text-[60px] font-bold leading-[0.8] text-white [text-shadow:0_3px_5px_rgba(0,0,0,0.85)] md:mt-5 md:text-[88px] lg:mt-7 lg:text-[116px]`}
+            className={`${cormorant.className} mt-0 text-[60px] font-bold leading-[0.8] text-white [text-shadow:0_3px_5px_rgba(0,0,0,0.85)] md:mt-0 md:text-[88px] lg:mt-2 lg:text-[116px]`}
           >
             Mirasol
           </p>
@@ -41,7 +46,7 @@ export default function TestPage() {
           @ <span className="text-[74px] md:text-[106px] lg:text-[148px]">75</span>
         </p>
         </div>
-        <div className="absolute top-[200%] left-1/2 z-10 h-[190vw] w-[190vw] -translate-x-1/2 -translate-y-1/2 rounded-full border-6 border-yellow-400 bg-white" />
+        <div className="absolute top-[205%] left-1/2 z-10 h-[190vw] w-[190vw] -translate-x-1/2 -translate-y-1/2 rounded-full border-6 border-yellow-400 bg-white" />
         <div className="absolute top-0 left-0 z-0 h-full w-[90vw] bg-gradient-to-r from-yellow-900/90 to-transparent" />
       </div>
     </div>
