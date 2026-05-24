@@ -31,12 +31,12 @@ export default function TestPage() {
             Celebration
           </p>
           <p
-            className={`${cormorant.className} mt-4 text-[64px] font-bold leading-[0.8] text-white [text-shadow:0_3px_5px_rgba(0,0,0,0.85)] md:mt-5 md:text-[88px] lg:mt-7 lg:text-[116px]`}
+            className={`${cormorant.className} mt-4 text-[60px] font-bold leading-[0.8] text-white [text-shadow:0_3px_5px_rgba(0,0,0,0.85)] md:mt-5 md:text-[88px] lg:mt-7 lg:text-[116px]`}
           >
             Mirasol
           </p>
           <p
-          className={`${cormorant.className} -mt-1 text-[48px] font-bold italic leading-none text-[#f2c84b] [text-shadow:0_3px_5px_rgba(0,0,0,0.75)] md:text-[64px] lg:text-[112px]`}
+          className={`${cormorant.className} -mt-4 text-[48px] font-bold italic leading-none text-[#f2c84b] [text-shadow:0_3px_5px_rgba(0,0,0,0.75)] md:text-[64px] lg:text-[112px]`}
         >
           @ <span className="text-[74px] md:text-[106px] lg:text-[148px]">75</span>
         </p>
