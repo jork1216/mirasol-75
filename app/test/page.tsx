@@ -15,7 +15,7 @@ export default function TestPage() {
 
   return (
     <div className="relative">
-      <div className="hero-section relative aspect-square w-full overflow-hidden md:inline-block md:aspect-auto md:w-fit">
+      <div className="hero-section relative aspect-square w-full overflow-hidden md:aspect-auto">
         <img
           src="/lola-cover.png"
           alt="Lola cover"
@@ -32,7 +32,7 @@ export default function TestPage() {
             <br />
             Celebration
           </p>
-          <div className="mx-auto mt-2 flex w-20 items-center gap-2 text-[#f2c84b] md:w-28 lg:mt-3 lg:w-36">
+          <div className="mx-auto mt-2 flex w-28 lg:w-48 items-center gap-2 text-[#f2c84b] md:w-28 lg:mt-3 lg:w-36">
             <div className="h-0.5 flex-1 bg-[#f2c84b]" />
             <svg
               aria-hidden="true"
