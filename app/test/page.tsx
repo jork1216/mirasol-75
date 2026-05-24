@@ -41,23 +41,53 @@ export default function TestPage() {
             Mirasol
           </p>
           <p
-          className={`${cormorant.className} -mt-4 text-[48px] font-bold italic leading-none text-[#f2c84b] [text-shadow:0_3px_5px_rgba(0,0,0,0.75)] md:text-[64px] lg:text-[112px]`}
-        >
-          @ <span className="text-[74px] md:text-[106px] lg:text-[148px]">75</span>
-        </p>
+            className={`${cormorant.className} -mt-4 text-[48px] font-bold italic leading-none text-[#f2c84b] [text-shadow:0_3px_5px_rgba(0,0,0,0.75)] md:text-[64px] lg:text-[112px]`}
+          >
+            @{" "}
+            <span className="text-[74px] md:text-[106px] lg:text-[148px]">
+              75
+            </span>
+          </p>
         </div>
         <div className="absolute top-[175%] left-1/2 z-10 h-[190vw] w-[190vw] -translate-x-1/2 -translate-y-1/2 rounded-full border-6 border-yellow-400 bg-white md:top-[205%]" />
         <div className="absolute top-0 left-0 z-0 h-full w-[90vw] bg-gradient-to-r from-yellow-900/90 to-transparent" />
-        <img
-          src="/sunflower.png"
-          alt="Sunflower"
-          className="absolute top-[-15%] -left-20 z-30 w-40 rotate-90 md:w-40 lg:w-48"
-        />
-        <img
-          src="/sunflower.png"
-          alt="Sunflower"
-          className="absolute top-[70%] -left-20 z-30 w-40 md:w-40 lg:w-48"
-        />
+
+      </div>
+
+      <div className="absolute top-[85%] left-1/2 z-[25] w-[88%] -translate-x-1/2 text-center text-green-950">
+        <div className="grid grid-cols-3 items-center">
+          <div className="border-r border-yellow-500 px-2">
+            <div className="mx-auto mb-2 flex size-9 items-center justify-center rounded-full bg-yellow-200 text-lg md:size-12">
+              □
+            </div>
+            <p className="text-xs font-bold tracking-[0.18em] md:text-base">
+              SATURDAY
+            </p>
+          </div>
+          <div className="px-2">
+            <div className="mx-auto mb-2 flex size-9 items-center justify-center rounded-full bg-yellow-200 text-lg md:size-12">
+              □
+            </div>
+            <p className="text-2xl font-bold tracking-[0.08em] md:text-4xl">
+              JUNE 27
+            </p>
+            <p className="text-sm font-bold tracking-[0.28em] md:text-xl">
+              2026
+            </p>
+          </div>
+          <div className="border-l border-yellow-500 px-2">
+            <div className="mx-auto mb-2 flex size-9 items-center justify-center rounded-full bg-yellow-200 text-lg md:size-12">
+              ○
+            </div>
+            <p className="text-xs font-bold tracking-[0.18em] md:text-base">
+              5:00 PM
+            </p>
+          </div>
+        </div>
+        <button className="mx-auto mt-5 rounded-full border-2 border-yellow-500 bg-green-950 px-10 py-3 text-sm font-semibold tracking-[0.18em] text-white shadow-lg md:px-16 md:text-lg">
+          RSVP NOW
+        </button>
+     
       </div>
     </div>
   );
