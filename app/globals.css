@@ -11,6 +11,7 @@
   --font-sans: var(--font-roboto);
   --font-mono: "Roboto Mono", "Courier New", monospace;
   --breakpoint-md: 501px;
+  --breakpoint-wide: 701px;
   --breakpoint-lg: 1025px;
 }
 

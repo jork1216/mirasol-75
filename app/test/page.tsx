@@ -15,24 +15,24 @@ export default function TestPage() {
 
   return (
     <div className="relative">
-      <div className="relative aspect-square w-full overflow-hidden md:inline-block md:aspect-auto md:w-fit">
+      <div className="hero-section relative aspect-square w-full overflow-hidden md:inline-block md:aspect-auto md:w-fit">
         <img
           src="/lola-cover.png"
           alt="Lola cover"
           className="block h-full w-full -translate-y-[10%] overflow-visible -translate-x-[25%] scale-140 object-cover md:h-auto md:w-auto md:-translate-x-[10%] md:scale-120"
         />
         <div className="absolute top-[10%] left-[10%] z-10 text-center">
-          <p className="text-[8px] font-medium tracking-[0.32em] text-white [text-shadow:0_2px_4px_rgba(0,0,0,0.7)] md:text-[11px] lg:text-[18px]">
+          <p className="text-[10px] font-medium tracking-[0.32em] text-white [text-shadow:0_2px_4px_rgba(0,0,0,0.7)] md:text-[11px] wide:text-[13px] lg:text-[18px]">
             PLEASE JOIN US FOR A
           </p>
           <p
-            className={`${greatVibes.className} mt-2 text-[30px] leading-[0.9] text-[#f2c84b] [text-shadow:0_2px_4px_rgba(0,0,0,0.65)] md:mt-2.5 md:text-[42px] lg:mt-3 lg:text-[72px]`}
+            className={`${greatVibes.className} mt-4 text-[40px] leading-[0.9] text-[#f2c84b] [text-shadow:0_2px_4px_rgba(0,0,0,0.65)] md:mt-2.5 md:text-[42px] wide:text-[50px] lg:mt-3 lg:text-[72px]`}
           >
             Birthday
             <br />
             Celebration
           </p>
-          <div className="mx-auto mt-0 flex w-20 items-center gap-2 text-[#f2c84b] md:w-28 lg:mt-3 lg:w-36">
+          <div className="mx-auto mt-2 flex w-20 items-center gap-2 text-[#f2c84b] md:w-28 lg:mt-3 lg:w-36">
             <div className="h-0.5 flex-1 bg-[#f2c84b]" />
             <svg
               aria-hidden="true"
@@ -44,15 +44,15 @@ export default function TestPage() {
             <div className="h-0.5 flex-1 bg-[#f2c84b]" />
           </div>
           <p
-            className={`${cormorant.className} mt-0 text-[60px] font-bold leading-[0.8] text-white [text-shadow:0_3px_5px_rgba(0,0,0,0.85)] md:mt-0 md:text-[88px] lg:mt-2 lg:text-[116px]`}
+            className={`${cormorant.className} mt-2 text-[60px] font-bold leading-[0.8] text-white [text-shadow:0_3px_5px_rgba(0,0,0,0.85)] md:mt-0 md:text-[88px] wide:text-[98px] lg:mt-2 lg:text-[116px]`}
           >
             Mirasol
           </p>
           <p
-            className={`${cormorant.className} -mt-4 text-[48px] font-bold italic leading-none text-[#f2c84b] [text-shadow:0_3px_5px_rgba(0,0,0,0.75)] md:text-[64px] lg:text-[112px]`}
+            className={`${cormorant.className} -mt-4 text-[48px] font-bold italic leading-none text-[#f2c84b] [text-shadow:0_3px_5px_rgba(0,0,0,0.75)] md:text-[64px] wide:text-[76px] lg:text-[112px]`}
           >
             @{" "}
-            <span className="text-[74px] md:text-[106px] lg:text-[148px]">
+            <span className="text-[74px] md:text-[106px] wide:text-[120px] lg:text-[148px]">
               75
             </span>
           </p>
@@ -156,7 +156,7 @@ export default function TestPage() {
             </div>
           </div>
         </div>
-        <button className="mx-auto mt-5 flex items-center justify-center gap-3 rounded-full border-2 border-yellow-500 bg-green-950 px-10 py-3 text-sm font-semibold tracking-[0.18em] text-white shadow-lg md:px-16 md:text-lg">
+        <button className="mx-auto mt-10 flex items-center justify-center gap-3 rounded-full border-2 border-yellow-500 bg-green-950 px-10 py-3 text-sm font-semibold tracking-[0.18em] text-white shadow-lg md:px-16 md:text-lg">
           <svg
             aria-hidden="true"
             className="size-5 md:size-6"
@@ -179,6 +179,12 @@ export default function TestPage() {
           RSVP NOW
         </button>
       </div>
+
+      <img
+        src="/sunflower-banner.png"
+        alt="Sunflower banner"
+        className="mx-auto -mb-1 block w-44 md:w-66"
+      />
 
       <section className="rsvp-form px-4 pb-12 text-green-950 md:px-8">
         <div className="mx-auto max-w-5xl">
