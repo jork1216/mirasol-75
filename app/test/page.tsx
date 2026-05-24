@@ -11,13 +11,15 @@ const cormorant = Cormorant_Garamond({
 });
 
 export default function TestPage() {
+  const dotIndexes = Array.from({ length: 10 });
+
   return (
     <div className="relative">
       <div className="relative aspect-square w-full overflow-hidden md:inline-block md:aspect-auto md:w-fit">
         <img
           src="/lola-cover.png"
           alt="Lola cover"
-          className="block h-full w-full -translate-y-[10%] -translate-x-[20%] scale-140 object-cover md:h-auto md:w-auto md:-translate-x-[10%] md:scale-120"
+          className="block h-full w-full -translate-y-[10%] overflow-visible -translate-x-[25%] scale-140 object-cover md:h-auto md:w-auto md:-translate-x-[10%] md:scale-120"
         />
         <div className="absolute top-[10%] left-[10%] z-10 text-center">
           <p className="text-[8px] font-medium tracking-[0.32em] text-white [text-shadow:0_2px_4px_rgba(0,0,0,0.7)] md:text-[11px] lg:text-[18px]">
@@ -32,7 +34,13 @@ export default function TestPage() {
           </p>
           <div className="mx-auto mt-0 flex w-20 items-center gap-2 text-[#f2c84b] md:w-28 lg:mt-3 lg:w-36">
             <div className="h-0.5 flex-1 bg-[#f2c84b]" />
-            <span className="text-sm md:text-base lg:text-xl">&#9829;</span>
+            <svg
+              aria-hidden="true"
+              className="size-3 fill-current md:size-4 lg:size-5"
+              viewBox="0 0 24 24"
+            >
+              <path d="M12 21s-7.5-4.5-9.5-9.5C1.1 7.9 3.3 4 7.1 4c2.1 0 3.5 1.1 4.9 2.7C13.4 5.1 14.8 4 16.9 4c3.8 0 6 3.9 4.6 7.5C19.5 16.5 12 21 12 21Z" />
+            </svg>
             <div className="h-0.5 flex-1 bg-[#f2c84b]" />
           </div>
           <p
@@ -75,6 +83,14 @@ export default function TestPage() {
             <p className="text-xs font-bold tracking-[0.18em] md:text-base">
               SATURDAY
             </p>
+            <div className="mx-auto mt-2 flex w-20 justify-between">
+              {dotIndexes.map((_, index) => (
+                <span
+                  key={index}
+                  className="size-1 rounded-full bg-yellow-500"
+                />
+              ))}
+            </div>
           </div>
           <div className="px-2">
             <div className="mx-auto mb-2 flex size-9 items-center justify-center rounded-full bg-yellow-200 text-lg md:size-12">
@@ -130,6 +146,14 @@ export default function TestPage() {
             <p className="text-xs font-bold tracking-[0.18em] md:text-base">
               5:00 PM
             </p>
+            <div className="mx-auto mt-2 flex w-20 justify-between">
+              {dotIndexes.map((_, index) => (
+                <span
+                  key={index}
+                  className="size-1 rounded-full bg-yellow-500"
+                />
+              ))}
+            </div>
           </div>
         </div>
         <button className="mx-auto mt-5 flex items-center justify-center gap-3 rounded-full border-2 border-yellow-500 bg-green-950 px-10 py-3 text-sm font-semibold tracking-[0.18em] text-white shadow-lg md:px-16 md:text-lg">
