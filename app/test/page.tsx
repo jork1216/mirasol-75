@@ -61,7 +61,7 @@ export default function TestPage() {
         <div className="absolute top-0 left-0 z-0 h-full w-[90vw] bg-gradient-to-r from-yellow-900/90 to-transparent" />
       </div>
 
-      <div className="absolute top-[85%] left-1/2 z-[25] w-[88%] -translate-x-1/2 text-center text-green-950">
+      <div className="date-and-time relative z-[25] mx-auto -mt-12 mb-28 w-[88%] text-center text-green-950">
         <div className="grid grid-cols-3 items-center">
           <div className="border-r border-yellow-500 px-2">
             <div className="mx-auto mb-2 flex size-9 items-center justify-center rounded-full bg-yellow-200 text-lg md:size-12">
@@ -179,6 +179,159 @@ export default function TestPage() {
           RSVP NOW
         </button>
       </div>
+
+      <section className="rsvp-form px-4 pb-12 text-green-950 md:px-8">
+        <div className="mx-auto max-w-5xl">
+          <h2
+            className={`${cormorant.className} text-center text-5xl font-bold leading-none md:text-7xl`}
+          >
+            RSVP Form
+          </h2>
+          <div className="mx-auto mt-3 flex w-44 items-center gap-3 text-yellow-500">
+            <div className="h-0.5 flex-1 bg-yellow-500" />
+            <svg
+              aria-hidden="true"
+              className="size-4 fill-current"
+              viewBox="0 0 24 24"
+            >
+              <path d="M12 21s-7.5-4.5-9.5-9.5C1.1 7.9 3.3 4 7.1 4c2.1 0 3.5 1.1 4.9 2.7C13.4 5.1 14.8 4 16.9 4c3.8 0 6 3.9 4.6 7.5C19.5 16.5 12 21 12 21Z" />
+            </svg>
+            <div className="h-0.5 flex-1 bg-yellow-500" />
+          </div>
+          <p className="mt-4 text-center text-base text-neutral-700 md:text-xl">
+            We can&apos;t wait to celebrate this special milestone with you.
+          </p>
+
+          <form className="mt-10 space-y-4">
+            <div className="grid gap-4 md:grid-cols-2">
+              <label className="flex items-center gap-5 rounded-xl border border-yellow-200 bg-white/70 px-6 py-4 shadow-sm">
+                <svg
+                  aria-hidden="true"
+                  className="size-7 shrink-0 fill-current text-green-950"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm-7 9a7 7 0 0 1 14 0H5Z" />
+                </svg>
+                <span className="block w-full">
+                  <span className="block text-sm font-semibold md:text-base">
+                    First name
+                  </span>
+                  <input
+                    className="mt-2 w-full bg-transparent text-base text-neutral-700 outline-none placeholder:text-neutral-400 md:text-xl"
+                    name="firstName"
+                    placeholder="Enter first name"
+                    type="text"
+                  />
+                </span>
+              </label>
+
+              <label className="flex items-center gap-5 rounded-xl border border-yellow-200 bg-white/70 px-6 py-4 shadow-sm">
+                <svg
+                  aria-hidden="true"
+                  className="size-7 shrink-0 fill-current text-green-950"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm-7 9a7 7 0 0 1 14 0H5Z" />
+                </svg>
+                <span className="block w-full">
+                  <span className="block text-sm font-semibold md:text-base">
+                    Last name
+                  </span>
+                  <input
+                    className="mt-2 w-full bg-transparent text-base text-neutral-700 outline-none placeholder:text-neutral-400 md:text-xl"
+                    name="lastName"
+                    placeholder="Enter last name"
+                    type="text"
+                  />
+                </span>
+              </label>
+            </div>
+
+            <label className="flex items-center gap-5 rounded-xl border border-yellow-200 bg-white/70 px-6 py-4 shadow-sm">
+              <svg
+                aria-hidden="true"
+                className="size-7 shrink-0 fill-current text-green-950"
+                viewBox="0 0 24 24"
+              >
+                <path d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24 11.4 11.4 0 0 0 3.6.58 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.46a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .58 3.6 1 1 0 0 1-.24 1l-2.2 2.2Z" />
+              </svg>
+              <span className="block w-full">
+                <span className="block text-sm font-semibold md:text-base">
+                  Contact number
+                </span>
+                <input
+                  className="mt-2 w-full bg-transparent text-base text-neutral-700 outline-none placeholder:text-neutral-400 md:text-xl"
+                  name="contactNumber"
+                  placeholder="Enter contact number"
+                  type="tel"
+                />
+              </span>
+            </label>
+
+            <label className="flex items-center gap-5 rounded-xl border border-yellow-200 bg-white/70 px-6 py-4 shadow-sm">
+              <svg
+                aria-hidden="true"
+                className="size-7 shrink-0 fill-current text-green-950"
+                viewBox="0 0 24 24"
+              >
+                <path d="M8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm8 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM2 20a6 6 0 0 1 12 0H2Zm10.5-1.5A6.5 6.5 0 0 1 22 20h-6.1a8 8 0 0 0-3.4-1.5Z" />
+              </svg>
+              <span className="block w-full">
+                <span className="block text-sm font-semibold md:text-base">
+                  Attendance / Number of guests
+                </span>
+                <select
+                  className="mt-2 w-full bg-transparent text-base text-neutral-400 outline-none md:text-xl"
+                  name="guestCount"
+                >
+                  <option>e.g., 2</option>
+                </select>
+              </span>
+            </label>
+
+            <label className="flex items-start gap-5 rounded-xl border border-yellow-200 bg-white/70 px-6 py-4 shadow-sm">
+              <svg
+                aria-hidden="true"
+                className="mt-2 size-7 shrink-0 fill-current text-green-950"
+                viewBox="0 0 24 24"
+              >
+                <path d="m4 17.25-.75 3.5 3.5-.75L18.8 7.95l-2.75-2.75L4 17.25Zm15.5-10 1.1-1.1a1.5 1.5 0 0 0 0-2.12l-.63-.63a1.5 1.5 0 0 0-2.12 0l-1.1 1.1 2.75 2.75Z" />
+              </svg>
+              <span className="block w-full">
+                <span className="block text-sm font-semibold md:text-base">
+                  Special requests / notes (optional)
+                </span>
+                <textarea
+                  className="mt-2 min-h-24 w-full resize-none bg-transparent text-base text-neutral-700 outline-none placeholder:text-neutral-400 md:text-xl"
+                  name="notes"
+                  placeholder="Let us know if there is anything we should note."
+                />
+              </span>
+            </label>
+
+            <button
+              className="mx-auto flex w-full max-w-4xl items-center justify-center gap-5 rounded-full border-2 border-yellow-500 bg-green-950 px-8 py-4 text-base font-semibold tracking-[0.22em] text-white shadow-lg md:text-2xl"
+              type="button"
+            >
+              <svg
+                aria-hidden="true"
+                className="size-7"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 21s-7.5-4.5-9.5-9.5C1.1 7.9 3.3 4 7.1 4c2.1 0 3.5 1.1 4.9 2.7C13.4 5.1 14.8 4 16.9 4c3.8 0 6 3.9 4.6 7.5C19.5 16.5 12 21 12 21Z"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+              SUBMIT RSVP
+            </button>
+          </form>
+        </div>
+      </section>
     </div>
   );
 }
