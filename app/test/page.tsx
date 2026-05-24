@@ -32,7 +32,7 @@ export default function TestPage() {
           </p>
           <div className="mx-auto mt-0 flex w-20 items-center gap-2 text-[#f2c84b] md:w-28 lg:mt-3 lg:w-36">
             <div className="h-0.5 flex-1 bg-[#f2c84b]" />
-            <span className="text-sm md:text-base lg:text-xl">♥</span>
+            <span className="text-sm md:text-base lg:text-xl">&#9829;</span>
             <div className="h-0.5 flex-1 bg-[#f2c84b]" />
           </div>
           <p
@@ -51,14 +51,26 @@ export default function TestPage() {
         </div>
         <div className="absolute top-[175%] left-1/2 z-10 h-[190vw] w-[190vw] -translate-x-1/2 -translate-y-1/2 rounded-full border-6 border-yellow-400 bg-white md:top-[205%]" />
         <div className="absolute top-0 left-0 z-0 h-full w-[90vw] bg-gradient-to-r from-yellow-900/90 to-transparent" />
-
       </div>
 
       <div className="absolute top-[85%] left-1/2 z-[25] w-[88%] -translate-x-1/2 text-center text-green-950">
         <div className="grid grid-cols-3 items-center">
           <div className="border-r border-yellow-500 px-2">
             <div className="mx-auto mb-2 flex size-9 items-center justify-center rounded-full bg-yellow-200 text-lg md:size-12">
-              □
+              <svg
+                aria-hidden="true"
+                className="size-5 md:size-6"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M7 3v3M17 3v3M4 8h16M6 5h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Z"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
             </div>
             <p className="text-xs font-bold tracking-[0.18em] md:text-base">
               SATURDAY
@@ -66,7 +78,25 @@ export default function TestPage() {
           </div>
           <div className="px-2">
             <div className="mx-auto mb-2 flex size-9 items-center justify-center rounded-full bg-yellow-200 text-lg md:size-12">
-              □
+              <svg
+                aria-hidden="true"
+                className="size-5 md:size-6"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M7 3v3M17 3v3M4 8h16M6 5h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Z"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <path
+                  d="M8 12h.01M12 12h.01M16 12h.01M8 16h.01M12 16h.01"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
             </div>
             <p className="text-2xl font-bold tracking-[0.08em] md:text-4xl">
               JUNE 27
@@ -77,7 +107,25 @@ export default function TestPage() {
           </div>
           <div className="border-l border-yellow-500 px-2">
             <div className="mx-auto mb-2 flex size-9 items-center justify-center rounded-full bg-yellow-200 text-lg md:size-12">
-              ○
+              <svg
+                aria-hidden="true"
+                className="size-5 md:size-6"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <path
+                  d="M12 7v5l3 2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
             </div>
             <p className="text-xs font-bold tracking-[0.18em] md:text-base">
               5:00 PM
@@ -87,7 +135,6 @@ export default function TestPage() {
         <button className="mx-auto mt-5 rounded-full border-2 border-yellow-500 bg-green-950 px-10 py-3 text-sm font-semibold tracking-[0.18em] text-white shadow-lg md:px-16 md:text-lg">
           RSVP NOW
         </button>
-     
       </div>
     </div>
   );
